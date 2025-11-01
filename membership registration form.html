@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f6f6;
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    form {
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    h2 {
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .row div {
+      flex: 1;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+    }
+
+    .checkbox-group label {
+      font-weight: normal;
+    }
+
+    textarea {
+      resize: none;
+      height: 70px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>Membership Registration Form</h2>
+    <p>Please fill out the form below to become a member.</p>
+
+    <div class="row">
+      <div>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="Enter your first name">
+      </div>
+      <div>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="Enter your last name">
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email address">
+      </div>
+      <div>
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="Enter your phone number">
+      </div>
+    </div>
+
+    <label for="address1">Address Line 1</label>
+    <input type="text" id="address1" placeholder="Enter your address line 1">
+
+    <label for="address2">Address Line 2</label>
+    <input type="text" id="address2" placeholder="Enter your address line 2">
+
+    <label for="country">Country</label>
+    <select id="country">
+      <option>United States of America</option>
+      <option>Indonesia</option>
+      <option>Malaysia</option>
+      <option>Singapore</option>
+      <option>Other</option>
+    </select>
+
+    <label>Membership Type</label>
+    <div class="checkbox-group">
+      <label><input type="radio" name="membership"> Basic</label>
+      <label><input type="radio" name="membership"> Premium</label>
+      <label><input type="radio" name="membership"> Elite</label>
+    </div>
+
+    <h3>Interests</h3>
+
+    <label>Favorite Sports</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Football</label>
+      <label><input type="checkbox"> Basketball</label>
+      <label><input type="checkbox"> Baseball</label>
+      <label><input type="checkbox"> Hockey</label>
+      <label><input type="checkbox"> Soccer</label>
+      <label><input type="checkbox"> Other</label>
+    </div>
+
+    <label for="why">Why do you want to become a member?</label>
+    <textarea id="why" placeholder="Please tell us why you want to join"></textarea>
+
+    <label><input type="checkbox"> I agree to the terms and conditions.</label>
+
+    <button type="submit">Submit Registration</button>
+  </form>
+
+</body>
+</html>
